@@ -12,7 +12,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/mainline.mk)
 
 #bootanimation
-TARGET_BOOT_ANIMATION_RES := 2280
+TARGET_BOOT_ANIMATION_RES := 1080
+
+#Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := syberia_beryllium
@@ -29,4 +32,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="beryllium" \
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi-rev1
-EXTENDED_BUILD_TYPE=OFFICIAL
